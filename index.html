@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watch Sales Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Watch Sales Tracker</h1>
+
+    <div id="nameSection">
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button onclick="startApp()">Start</button>
+    </div>
+
+    <div id="appSection" style="display: none;">
+      <h2 id="greeting"></h2>
+
+      <h3>Add Sale</h3>
+      <input type="text" id="productInput" placeholder="Watch Name" />
+      <input type="number" id="priceInput" placeholder="Price (TZS)" />
+      <input type="text" id="imageInput" placeholder="Image URL (optional)" />
+      <button onclick="addSale()">Add Sale</button>
+
+      <h3>Today's Sales</h3>
+      <ul id="salesList"></ul>
+
+      <p><strong>Total:</strong> <span id="totalSales">0</span> TZS</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
